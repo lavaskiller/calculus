@@ -14,15 +14,15 @@ The Calculus project focuses on processing and analyzing raw data from mid-term 
 - `grade.txt`: Raw mid-term exam scores. Includes headers.
 - `grade2.txt`: Raw final exam scores. Includes headers.
 - `final.txt`: Combined scores from mid-term and final exams. Includes headers.
-- 'flask_app.py': Show results by web page.
+- `flask_app.py`: Show results by web page.
 
 ## Usage
 1. Ensure `grade.txt` and `grade2.txt` in `sum_data/`.
 2. Run `sum.py` to create `final.txt` with combined scores.
-3. Add header to `grade.txt`, `grade2.txt`, `final.txt` in `sum_data/` and save it local '/'.
+3. Add header to `grade.txt`, `grade2.txt`, `final.txt` in `sum_data/` and save it local `/`.
 4. Use `calc.py` for further data processing and web display preparation.
 5. Edit `sayings.txt` to change or add web display messages.
-6. run flask_app.py to make webpages local on your notebook. For this you need to uncomment 102-103 of flask_app.py
+6. run `flask_app.py` to make webpages local on your notebook. For this you need to uncomment 102-103 of `flask_app.py`.
 
 ## License
 This project is licensed under the [MIT License](https://github.com/lavaskiller/calculus/blob/main/LICENSE).
