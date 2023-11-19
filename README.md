@@ -3,6 +3,9 @@
 ## Introduction
 The Calculus project focuses on processing and analyzing raw data from mid-term and final exams.
 
+## Live Demo
+Experience the functionality of this project in action! Visit our live demo at [Lavaskiller's Calculus Demo](https://lavaskiller.pythonanywhere.com/). Explore the features and see how it works in real-time.
+
 ## File Structure
 - `sum_data/`
   - `grade.txt`: Raw mid-term exam scores. Requires header addition.
