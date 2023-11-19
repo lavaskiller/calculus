@@ -1,0 +1,1600 @@
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W73MTL68DR"
+    ></script>
+    <script src="https://woohyuk.kr/ana.js"></script>
+    <title>조회 결과</title>
+    <div
+      style="
+        padding: 10px;
+        display: block;
+        font-size: 12px;
+        color: #333;
+        margin-bottom: 2px;
+        text-align: left;
+        color: gray;
+        width: device-width-10;
+      "
+    >
+      <marquee width="device-width-10" scrollamount="2" behavior="alternate"
+        >{{log}}</marquee
+      >
+    </div>
+    <div
+      style="
+        padding: 10px;
+        display: block;
+        font-size: 12px;
+        color: #333;
+        margin-bottom: 2px;
+        text-align: left;
+        color: red;
+        width: device-width-10;
+      "
+    >
+      {{all_peos[0]}}개의 학번(총원의 {{all_peos[1]}}%)이 사이트를 통해
+      조회되었습니다. <br />
+      더 많이 조회할 수 있도록 에타 게시물에 좋아요 부탁드립니다.
+    </div>
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <table
+    style="
+      border-collapse: collapse;
+      border-spacing: 0;
+      padding-left: 5px;
+      padding-right: 5px;
+      width: 300px;
+    "
+  >
+    <thead>
+      <tr>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          Info
+        </th>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          중간고사
+        </th>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          기말고사
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+          ,
+          class="tg-0pky"
+        >
+          총원(전체인원)
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border-collapse: collapse;
+            border-spacing: 0;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_info[0]}} 명
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border-collapse: collapse;
+            border-spacing: 0;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_info[0]}} 명
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+          ,
+          class="tg-0pky"
+        >
+          {{nm}}분반 총원
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border-collapse: collapse;
+            border-spacing: 0;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_info[1]}} 명
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border-collapse: collapse;
+            border-spacing: 0;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_info[1]}} 명
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+          ,
+          class="tg-0pky"
+        >
+          응시 인원
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border-collapse: collapse;
+            border-spacing: 0;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_info[2]}} 명
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border-collapse: collapse;
+            border-spacing: 0;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_info[2]}} 명
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+          ,
+          class="tg-0pky"
+        >
+          미응시 인원
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border-collapse: collapse;
+            border-spacing: 0;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_info[3]}} 명
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border-collapse: collapse;
+            border-spacing: 0;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_info[3]}} 명
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="padding: 10px"></div>
+
+  <table
+    style="
+      border-collapse: collapse;
+      border-spacing: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      width: 300px;
+    "
+  >
+    <thead>
+      <tr>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          Result
+        </th>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          중간고사
+        </th>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          기말고사
+        </th>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          최종
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          원점수
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_datas[0]}} 점
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_datas[0]}} 점
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{datas[0]}} 점
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          등수
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_datas[1]}} 등
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_datas[1]}} 등
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{datas[1]}} 등
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          동점자
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_datas[2]}} 명
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_datas[2]}} 명
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{datas[2]}} 명
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          백분위
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_datas[3]}} %
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_datas[3]}} %
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{datas[3]}} %
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="padding: 10px"></div>
+
+  <table
+    style="
+      border-collapse: collapse;
+      border-spacing: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      width: 300px;
+    "
+  >
+    <thead>
+      <tr>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          Analysis
+        </th>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          중간고사
+        </th>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          기말고사
+        </th>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          최종
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          평균
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_datas2[0]}} 점
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_datas2[0]}} 점
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{datas2[0]}} 점
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          표준편차
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_datas2[1]}}
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_datas2[1]}}
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{datas2[1]}}
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          80%
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_datas2[2]}} 점
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_datas2[2]}} 점
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{datas2[2]}} 점
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          50%
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_datas2[3]}} 점
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_datas2[3]}} 점
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{datas2[3]}} 점
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          20%
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_datas2[4]}} 점
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_datas2[4]}} 점
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{datas2[4]}} 점
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="padding: 10px"></div>
+
+  <table
+    style="
+      border-collapse: collapse;
+      border-spacing: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      width: 300px;
+    "
+  >
+    <thead>
+      <tr>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: red;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          분반기준
+        </th>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          중간고사
+        </th>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          기말고사
+        </th>
+        <th
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            background-color: #dae8fc;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          최종
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          등수
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_seps[0]}} 등
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_seps[0]}} 등
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{seps[0]}} 등
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          동점자
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_seps[1]}} 명
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_seps[1]}} 명
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{seps[1]}} 명
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          백분위
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_seps[2]}} %
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_seps[2]}} %
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{seps[2]}} %
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          평균
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_seps[3]}} 점
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_seps[3]}} 점
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{seps[3]}} 점
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          표준편차
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{m_seps[4]}}
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{f_seps[4]}}
+        </td>
+        <td
+          style="
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+            text-align: center;
+            vertical-align: center;
+          "
+        >
+          {{seps[4]}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p></p>
+  <p><a href="/">다시 계산하기. Click here to calculate again</a></p>
+  <p><a href="/logs">계산 수식 상세보기</a></p>
+</html>

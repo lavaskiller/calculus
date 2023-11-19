@@ -1,0 +1,38 @@
+<html style="overflow: hidden">
+        <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W73MTL68DR"></script>
+        <script src="https://woohyuk.kr/ana.js" > </script>
+        </head>
+        <title>미적분 결과 조회</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no", />
+            <body style="background-color: #ededed;padding: 0; margin:1px auto;">
+                <div style="margin: 3%;">
+                  <h2 style="width: 100%; height: 100px; line-height: 100px; text-align: center; font-size: 20px; font-weight: bold;">2023 미분적분학 결과 분석</h2>
+                  <form method="post" action="." style="width: 100%;height: 500px;background-color: #fff;padding: 30px auto; box-sizing: border-box;">
+                  <div style="padding:5px;"> </div>
+                  <p style="display: block; font-size: 12px; color: #333;text-align: center; color: blue">경희대학교에서 제공하는 공식 조회 프로그램이 아니며,<br>홈페이지에 올라온 점수를 바탕으로 제작되었음을 알립니다.</p>
+                  <div style="padding:10px;"> </div>
+                    <!--작성하지 않아도 문제는 없음-->
+                    <fieldset style="border: none;">
+                      <legend style="position: absolute; left: -999em;">조회 구역</legend>
+                      <label for="loginid" style="display: block; font-size: 12px; color: #333;margin-bottom: 10px;">분반(Division)</label>
+                      <input id="loginid" style="display: block; width: 100%; height: 50px;margin-bottom: 25px;border: none;background-color: #ededed;padding: 0 10px;box-sizing: border-box;" name="number1" placeholder="분반을 입력해주세요">
+                      <label for="loginpw" style="display: block; font-size: 12px; color: #333;margin-bottom: 10px;">학번 마지막 4자리(Last 4 digit of Student ID)</label>
+                      <input id="loginpw" style="display: block; width: 100%; height: 50px;margin-bottom: 25px;border: none;background-color: #ededed;padding: 0 10px;box-sizing: border-box;" name="number2" placeholder="학번 마지막 4자리를 입력해주세요">
+                      <label style="display: flex; justify-content: flex-end;">
+                        <input type="checkbox" name="abc" value="abc" style="margin-left: 5px;" checked>미응시자 제외
+                      </label>
+                      <ul style="width: 100%;text-align: left;margin-bottom: 50px">
+                        <li style="display: inline-block;height: 12px; line-height: 12px; color: #333; font-size: 12px; position: relative; top: -20px; left: -35px; color:red">{{errors}}</li>
+                      </ul>
+                      <input style="cursor: pointer;display:block;width:220px;height:50px; margin:10px auto; border:none; background-color: #1673ea; color: #fff; font-size: 14px; font-weight: bold;" type="submit" value="조회하기" />
+                      <p style="display: block; font-size: 12px; color: black; font-weight: bold; margin-bottom: 10px; text-align:center">{{vst}}</p>
+                      <p style="display: block; font-size: 11px; color: black; font-weight: bold; margin-bottom: 10px; text-align:center">(๑❛ڡ❛๑) 성적이 올라가길~ ( ๑˃̶ ꇴ ˂̶)♪⁺</p>
+                      <div style="padding:10px;">
+                    </fieldset>
+                  </form>
+                </div>
+                <p style="display: block; font-size: 12px; color: #333;margin-bottom: 10px; text-align:center">Copyright(c) 2023. lavaskiller, All rights reserved.</p>
+            </body>
+</html>
