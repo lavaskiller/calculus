@@ -84,7 +84,7 @@ def analysis(data, my_grade, abc, ran):
 
     total = z_overall_grade.size
     lower = 0
-    same = 0
+    same = -1
 
     for i in z_overall_grade:
         if i < z_score:
@@ -178,6 +178,13 @@ def calc(inp_cls, inp_id, ipad, root, abc, q):
         class_data, my_grade, abc, "class"
     )
 
+    # 예외 처리
+    if int(inp_id) // 100 == 77:
+        if c_same < 0:
+            c_same = 0
+        if same < 0:
+            same = 0
+
     # 분석 결과를 정렬하기 (이후 특정 %에 있는 점수 추출을 위함)
     overall_grade.sort()
     class_grade.sort()
@@ -206,7 +213,12 @@ def calc(inp_cls, inp_id, ipad, root, abc, q):
         log = """<p style="color:red">이 결과는 실제 존재하지 않는 예시입니다. 계산에는 포함되지 않습니다.</p>"""
 
     # 총원(전체인원), 00분반 총원, 응시 인원, 미응시 인원
-    info = [int(data.size / 4), int(class_data.size / 4), n_of_test, n_of_absence]
+    info = [
+        int(data.size / 4) - 1,
+        int(class_data.size / 4) - 1,
+        n_of_test,
+        n_of_absence,
+    ]
 
     # 원점수, 등수, 동점자, 백분위
     datas = [
@@ -241,30 +253,30 @@ def calc(inp_cls, inp_id, ipad, root, abc, q):
 
 # 예시 반환값 확인
 
-# print(
-#     calc(
-#         "01",
-#         "7749",
-#         "ip 주소",
-#         "C:/Users/lavaskiller/Desktop/Python Workspace/calculus/grade.txt",
-#         "abc",
-#         False,
-#     ),
-#     calc(
-#         "01",
-#         "7749",
-#         "ip 주소",
-#         "C:/Users/lavaskiller/Desktop/Python Workspace/calculus/grade2.txt",
-#         "abc",
-#         False,
-#     ),
-#     calc(
-#         "01",
-#         "7749",
-#         "ip 주소",
-#         "C:/Users/lavaskiller/Desktop/Python Workspace/calculus/final.txt",
-#         "abc",
-#         False,
-#     ),
-#     sep="\n",
-# )
+print(
+    calc(
+        "01",
+        "5349",
+        "ip 주소",
+        "C:/Users/lavaskiller/Desktop/Python Workspace/calculus/grade.txt",
+        "abc",
+        False,
+    ),
+    calc(
+        "01",
+        "5349",
+        "ip 주소",
+        "C:/Users/lavaskiller/Desktop/Python Workspace/calculus/grade2.txt",
+        "abc",
+        False,
+    ),
+    calc(
+        "01",
+        "5349",
+        "ip 주소",
+        "C:/Users/lavaskiller/Desktop/Python Workspace/calculus/final.txt",
+        "abc",
+        False,
+    ),
+    sep="\n",
+)
