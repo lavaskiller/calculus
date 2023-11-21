@@ -253,30 +253,30 @@ def calc(inp_cls, inp_id, ipad, root, abc, q):
 
 # 예시 반환값 확인
 
-print(
-    calc(
-        "01",
-        "5349",
-        "ip 주소",
-        "C:/Users/lavaskiller/Desktop/Python Workspace/calculus/grade.txt",
-        "abc",
-        False,
-    ),
-    calc(
-        "01",
-        "5349",
-        "ip 주소",
-        "C:/Users/lavaskiller/Desktop/Python Workspace/calculus/grade2.txt",
-        "abc",
-        False,
-    ),
-    calc(
-        "01",
-        "5349",
-        "ip 주소",
-        "C:/Users/lavaskiller/Desktop/Python Workspace/calculus/final.txt",
-        "abc",
-        False,
-    ),
-    sep="\n",
-)
+# print(
+#     calc(
+#         "01",
+#         "5349",
+#         "ip 주소",
+#         "C:/Users/lavaskiller/Desktop/Python Workspace/calculus/grade.txt",
+#         "abc",
+#         False,
+#     ),
+#     calc(
+#         "01",
+#         "5349",
+#         "ip 주소",
+#         "C:/Users/lavaskiller/Desktop/Python Workspace/calculus/grade2.txt",
+#         "abc",
+#         False,
+#     ),
+#     calc(
+#         "01",
+#         "5349",
+#         "ip 주소",
+#         "C:/Users/lavaskiller/Desktop/Python Workspace/calculus/final.txt",
+#         "abc",
+#         False,
+#     ),
+#     sep="\n",
+# )
